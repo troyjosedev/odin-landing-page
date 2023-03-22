@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* Modern CSS Reset */
+:root {
+  --black: #222;
+  --white: #fff;
+  --grey: #ddd;
+  
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: 2px solid red; */
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  background-color: #19A7CE;
+}
+
+.nav__logo {
+  max-width: 6.25em;
+}
+
+.nav__flex {
+  display: flex;
+  gap: 2em;
+  color: #F6F1F1;
+  font-weight: 700;
+}
+
+
+
+.nav__flex li:hover,
+.nav__flex li:active {
+  color: #2F58CD;
+}
+
+
+.main {
+  display: flex;
+  background-color: #3A98B9;
+  padding: 8em 9em;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.main__header {
+  color: #DFFFD8;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.main__content {
+  max-width: 500px;
+  text-align: justify;
+  text-indent: 3em;
+}
+
+.main__para {
+  color: var(--black);
+  font-size: 1.1rem;
+}
+
+.main__button {
+  background-color: #E9F8F9;
+  color: #205E61;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.4em 1em;
+  margin-block: 1em;
+  border-radius: 6.25rem;
+  font-weight: 500;
+}
+
+.main__button:hover {
+  background-color: #A5F1E9;
+}
+
+.main__img {
+  max-width: 300px;
+}
+
+.gallery {
+  background-color: #0081B4;
+}
+
+.gallery p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #E3F6FF;
+  letter-spacing: 10px;
+}
+
+.gallery__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 6.5em;
+}
+
+.gallery__container img {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+}
+.gallery__heading {
+  text-align: center;
+  padding-block: 1em;
+  letter-spacing: .2rem;
+  color: #ECF9FF;
+}
+
+.quote {
+  padding: 10em;
+  display: flex;
+  flex-direction: column;
+  background-color: #3C79F5;
+  color: #FCFFE7;
+}
+
+.quote__para {
+  font-size: 2rem;
+}
+
+.quote__cite {
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+  background-color: #BAD7E9;
+  padding: 4em;
+}
+
+.sign__header {
+  color: #0D4C92;
+}
+
+.sign__para {
+  font-weight: 500;
+  color: #3E6D9C;
+}
+
+.sign__button {
+  padding: 0.6em 1em;
+  border-radius: 6.25rem;
+  font-size: 1.2rem;
+  color: #002E94;
+  font-weight: 500;
+  border: none;
+  
+  }
+
+.sign__button:hover {
+  background-color: #E1FFEE;
+}
+
+.footer {
+  padding: 1em;
+  text-align: center;
+  font-weight: 500;
+  color: #25316D;
+}
